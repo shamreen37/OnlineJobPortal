@@ -1,0 +1,83 @@
+.login-section{
+    background-image: url("../img/login.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.login-container{
+    height: 100%;
+    }
+    .login-left-row{
+      height: 100%
+    }
+    .login-col{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      
+    }
+    .login-col-div{
+        width: 70% !important;
+        padding-top: 6%;
+    }
+    .login-col-head{
+        display: flex;
+        justify-content: space-around;
+    }
+    .login-input{
+        width: 100% !important;
+        padding:10px 30px 10px 20px;
+        box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.25) !important;
+        border-radius: 20px;
+        display: flex;
+    }
+    .login-input i{
+        padding: 8px 10px;
+        font-size: 22px;
+    }
+    .login-input input{
+        border: None !important;
+        width: 100% !important;
+        background-color: transparent !important;
+    }
+    .login-input input[type=text]:hover{
+        border: None !important;
+    }
+    .login-input input:active, .login-input input:focus{
+        box-shadow: none !important;
+        border-bottom: 1px solid black;
+        
+    }
+    ::-webkit-input-placeholder {
+        color: rgb(123, 121, 121);
+    }
+    ::-webkit-input-placeholder:active{
+        color: blue !important;
+    }
+    
+    #candidate-text{
+        font-size: 24px !important ;
+        color:  rgb(44, 161, 212);
+    border-bottom:3px solid rgb(67, 167, 210);
+    padding:5px 10px;
+    border-radius: 10px;
+    }
+    #employer-text{
+     font-size: 24px;
+     text-align: right;
+padding:5px 10px;
+border-radius: 10px;
+    }
+    .login-bottom-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin-top: 20px;
+    }
+    .login-bottom-div p{
+        padding-top: 11px;
+    }
+    
