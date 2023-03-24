@@ -1,0 +1,22 @@
+home-section{
+    overflow: hidden;
+    height: 100vh !important;
+    
+}
+.homecol-1, .homecol-2, .homecol-3 {
+    position: sticky;
+    overflow-y: scroll ;
+    top: 0px;
+    height: 100vh !important;
+   
+}
+.homecol-1::-webkit-scrollbar, .homecol-2::-webkit-scrollbar, .homecol-3::-webkit-scrollbar {
+    display: none;
+}
+.home-latest-job-updates-logo{
+    width: 80px;
+}
+.profile-img-home{
+    border-radius: 50%;
+    width: 100px;
+}

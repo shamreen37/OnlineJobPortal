@@ -1,10 +1,10 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import logo from '../img/logo.png'
-const Navbar = () => {
+const NavbarInner = () => {
   return (
     <>
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar position-sticky box-shadow py-3 navbar-expand-lg navbar-light">
   <div className="container">
     <img className='navbar-brand' src={logo}/>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,4 +42,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarInner

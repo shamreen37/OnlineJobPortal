@@ -1,8 +1,20 @@
 import React from 'react'
-import FooterNarrow from '../components/FooterNarrow'
+import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import '../css/signup.css'
+import { useState } from 'react'
 const Signup = () => {
+  const [can,setCan]= useState(true);
+ const [emp,setEmp]= useState(false);
+
+const Switch1=()=>{
+  setEmp(false); 
+  setCan(true);
+}
+const Switch2=()=>{
+  setEmp(true); 
+  setCan(false);
+}
   return (
     <>
      <div className="signup-section">
@@ -13,11 +25,12 @@ const Signup = () => {
             <div className="col-md-6 signup-col">
                 <div className="signup-col-div">
                     <div className="signup-col-head">
-                      <h2 id='candidate-text'>Candidate</h2> 
-                      <h2 id='employer-text'>Employee</h2>
+                      <h2 id='candidate-text' className={` ${can?'show-underline':''} ${emp? 'show-not-underline':''}`} onClick={Switch1}>Candidate</h2> 
+                      <h2 id='employer-text' className={` ${emp?'show-underline':''} ${can? 'show-not-underline':''}`} onClick={Switch2}>Company</h2>
                     </div>
-
-                   <form action="">
+                 
+               {can? <div className="candidate-signup-div">
+                <form action="">
                    <div className="signup-input my-3">
                       <input className='form-control' type="text" name="name" id="" placeholder="Name" />
                     </div>
@@ -32,18 +45,49 @@ const Signup = () => {
 
                     <div className="signup-input my-3">
                    
-                      <input className='form-control' type="text" name="designation" id="" placeholder="Designation" />
+                      <input className='form-control' type="text" name="contact" id="" placeholder="Contact Number" />
                     </div>
 
                     <div className="signup-input my-2">
                       <input className='form-control' type="password" name="" id="" placeholder="Password" />
                     </div>
 
-                     <div className="signup-bottom-div">
-                      <div className="forgot-pwd"> <p>Already Registered?Login</p> </div>
-                     <div className="btn btn-primary m-2"> Register </div>
-                     </div>
                    </form>
+                </div> :null}
+
+              {emp?
+              <div className="company-signup-div">
+              <form action="">
+                 <div className="signup-input my-3">
+                    <input className='form-control' type="text" name="name" id="" placeholder="Company Name" />
+                  </div>
+
+                 <div className="signup-input my-3">
+                    <input className='form-control' type="text" name="" id="" placeholder="Organisation Official Email" />
+                  </div>
+
+                  <div className="signup-input my-3">
+                    <input className='form-control' type="text" name="companyName" id="" placeholder="Domain Name" />
+                  </div>
+
+                  <div className="signup-input my-3">
+                 
+                    <input className='form-control' type="text" name="contact" id="" placeholder="Contact Number" />
+                  </div>
+
+                  <div className="signup-input my-2">
+                    <input className='form-control' type="password" name="" id="" placeholder="Password" />
+                  </div>
+
+                  
+                 </form>
+                  
+              </div>  :null}
+              <div className="signup-bottom-div">
+                    <div className="forgot-pwd"> <p>Already Registered?  <Link to="/login"> Login</Link> </p> </div>
+                   <div className="btn btn-primary m-2"> Register </div>
+                   </div>
+                   
                 </div>
             </div>
           </div>

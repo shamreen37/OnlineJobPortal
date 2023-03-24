@@ -5,7 +5,11 @@
     width: 100%;
     padding:2% 3%;
 }
-
+.navbar-brand{
+  position: absolute;
+  width: 100px;
+  padding:0px 12px ;
+}
     
 
 .nav-link{
@@ -44,6 +48,58 @@
     font-weight: bold;
   }
 
+/*=== Categories===========*/
+.cat-div{
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.15) !important;
+  border-radius:10px;
+}
+.cat-div i{
+  font-size: 35px;
+  padding: 20px 0px;
+  color: #1fc2e9;
+}
+.cat-head{
+  font-size: 25px;
+}
+
+  /*======== How it works?=========*/
+  .working-section{
+    background-image: url("../img/Desktop5.png");
+  background-size: cover;
+  width: 100%;
+  }
+.working-inner-div{
+  display: flex;
+ /* box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.25) !important;*/
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+}
+.working-inner-icon-div{
+  width: 180px !important;
+  height: 100px !important;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #daecf0;
+  border-radius: 10px;
+}
+.working-inner-icon-div i{
+  font-size: 32px;
+  color: #1fc2e9;
+}
+.working-inner-content-div{
+  padding-left: 15px;
+}
+/*============= Create section===============*/
+.create-section{
+  background-image: url("../img/Desktop4.png");
+  background-size: cover;
+  width: 100%;
+}
 
   /*======== Footer =============*/
   .footerNarrow-section{
@@ -53,4 +109,95 @@
   .footerNarrow-section p{
     text-align: center;
   }
+  /*Footer*/
+
+.footer img {
+  width: 70px;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  font-size: 14px;
+}
+
+.footer-logo-img img {
+  height: 80px !important;
+  width: auto !important;
+}
+
+.footer p {
+  color: #f9f9f9;
+}
+
+.footer .container {
+  max-width: 1100px !important;
+  z-index: 1000 !important;
+}
+
+.footer-logo-txt {
+  width: 90%;
+}
+
+.my-btn {
+  background-color: #0090D0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.topic {
+  font-size: 19px;
+  font-weight: 450;
+  margin-bottom: 0;
+  color: rgb(255, 255, 255) !important;
+}
+
+.social-div a i {
+  font-size: 22px !important;
+  margin-top: 10px;
+  color: #f9f9f9 !important;
+}
+
+.footer i:hover {
+  color: #017aad !important;
+}
+
+.footer form input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  max-width: 260px;
+}
+
+.footer form .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none !important;
+  outline: none !important;
+  display: flex;
+}
+
+.row-col i {
+  font-size: 15px;
+  color: #f9f9f9 !important;
+  margin-right: 5px;
+}
+
+.footer form .btn i {
+  color: #0090D0 !important;
+  margin: 3px 0;
+  font-size: 18px;
+}
+
+.disableElem {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.footer hr {
+  color: rgb(0, 0, 0);
+}
+
+
   

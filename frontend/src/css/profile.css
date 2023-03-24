@@ -1,0 +1,23 @@
+.left-summary{
+    background-color: honeydew;
+   border-radius: 2px;
+   margin-top:5%;
+   margin-left:5%;
+   padding:20px;
+   text-align:justify;
+   overflow: hidden;
+   height:50vh;
+   }
+   
+
+   
+   .right-div{
+   background-color: white;
+   margin-top:5%;
+   margin-left:10px;
+   padding:50px;
+   
+   overflow-x: hidden;
+   overflow-y: auto;
+   text-align:justify;
+   }

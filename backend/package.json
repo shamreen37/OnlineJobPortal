@@ -1,0 +1,17 @@
+{
+  "name": "major_project_part_1",
+  "version": "1.0.0",
+  "description": "major Project attempt1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rishabh Verma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.1",
+    "underscore": "^1.13.6"
+  }
+}

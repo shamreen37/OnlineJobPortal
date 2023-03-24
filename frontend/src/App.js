@@ -5,6 +5,7 @@ import './css/landing.css'
 import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Home from './pages/Home';
+import Profile from './pages/Profile';
 import {Routes, Route} from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 import Signup from './pages/Signup';
@@ -17,6 +18,7 @@ function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/home" element={<Home/>}/>
+      <Route path="/profile" element={<Profile/>}/>
      </Routes>
    </BrowserRouter>
   );
