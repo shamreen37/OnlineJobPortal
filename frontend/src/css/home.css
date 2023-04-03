@@ -1,7 +1,5 @@
-home-section{
-    overflow: hidden;
-    height: 100vh !important;
-    
+.home-section{
+    background-color: rgb(245, 245, 245);
 }
 .homecol-1, .homecol-2, .homecol-3 {
     position: sticky;
@@ -16,7 +14,38 @@ home-section{
 .home-latest-job-updates-logo{
     width: 80px;
 }
+.search-home-div{
+    background-image: linear-gradient(to right bottom, #1298b8, #5fb1c5, #1da1c1, #3daac6, #26aac9, #3dadc6, #25a9c8, #3ab2cd, #20a2c2, #51a4b9, #1497b7, #2695b1);
+    color: white;
+}
+.search-home-input{
+    background-color: rgba(255, 255, 255, 0.272);
+    border: none !important;
+}
+.search-home-input::placeholder{
+    color: white;
+}
+.search-btn-home{
+    color: #1fc2e9;
+    font-weight: 500;
+}
 .profile-img-home{
     border-radius: 50%;
     width: 100px;
+}
+.skill-name{
+    background-color: rgb(230, 228, 228);
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: inline;
+    margin:5px ;
+    line-height: 36px;
+}
+.home-work-exp-logo{
+    width: 45px;
+    margin-right: 0;
+}
+.latest-job-updates-home{
+    background-color: #fff;
 }

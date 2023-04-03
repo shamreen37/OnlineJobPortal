@@ -11,12 +11,20 @@
   padding:0px 12px ;
 }
     
-
+.inner-nav-logo{
+  width: 80px !important;
+}
 .nav-link{
     font-weight: bold;
 }
-
-
+.nav-profile{
+  width: 45px;
+  border-radius: 50%;
+}
+.nav-icon{
+  font-size: 22px;
+  
+}
 /* Hero section*/
 
 .hero-section{

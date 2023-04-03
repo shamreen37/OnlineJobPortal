@@ -32,6 +32,7 @@
         box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.25) !important;
         border-radius: 20px;
         display: flex;
+        transition: all ease 0.4s;
     }
     .login-input i{
         padding: 8px 10px;
@@ -49,6 +50,10 @@
         box-shadow: none !important;
         border-bottom: 1px solid black;
         
+    }
+    .login-input:active,.login-input:focus, .login-input:hover{
+        box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.445) !important;
+        transform: scale(1.02);
     }
     ::-webkit-input-placeholder {
         color: rgb(123, 121, 121);

@@ -2,7 +2,6 @@ html,body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 p{
   color: rgb(30, 30, 30);
@@ -10,6 +9,10 @@ p{
 .box-shadow{
   box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.25) !important;
         border-radius: 8px;
+}
+.btn-primary{
+  background-color: #14bee8 !important;
+  border: #1fc2e9 !important;
 }
 /*
 @media (prefers-reduced-motion: no-preference) {
