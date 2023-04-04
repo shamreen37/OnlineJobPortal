@@ -30,7 +30,8 @@ const Switch2=()=>{
                     </div>
                  
                {can? <div className="candidate-signup-div">
-                <form action="">
+                {/* ====== candidate form ====== */}
+                <form action="" method='POST' >
                    <div className="signup-input my-3">
                       <input className='form-control' type="text" name="name" id="" placeholder="Name" />
                     </div>
@@ -53,17 +54,25 @@ const Switch2=()=>{
                     </div>
 
                    </form>
-                </div> :null}
+                   <div className="signup-bottom-div">
+                    <div className="forgot-pwd"> <p>Already Registered?  <Link to="/login"> Login</Link> </p> </div>
+                   <input type='submit' className="btn btn-primary m-2"  value='Register' /> 
+               </div>
+                </div>
+                
+                :null}
 
               {emp?
               <div className="company-signup-div">
+
+                {/*============ company form ============== */}
               <form action="">
                  <div className="signup-input my-3">
                     <input className='form-control' type="text" name="name" id="" placeholder="Company Name" />
                   </div>
 
                  <div className="signup-input my-3">
-                    <input className='form-control' type="text" name="" id="" placeholder="Organisation Official Email" />
+                    <input className='form-control' type="email" onChange={(e)=>{setEmail(e.target.value)}} name="" id="" placeholder="Organisation Official Email" />
                   </div>
 
                   <div className="signup-input my-3">
@@ -76,17 +85,19 @@ const Switch2=()=>{
                   </div>
 
                   <div className="signup-input my-2">
-                    <input className='form-control' type="password" name="" id="" placeholder="Password" />
+                    <input className='form-control' onChange={(e)=>{setPassword(e.target.value)}} type="password" name="" id="" placeholder="Password" />
                   </div>
 
                   
                  </form>
                   
-              </div>  :null}
-              <div className="signup-bottom-div">
+                 <div className="signup-bottom-div">
                     <div className="forgot-pwd"> <p>Already Registered?  <Link to="/login"> Login</Link> </p> </div>
-                   <div className="btn btn-primary m-2"> Register </div>
-                   </div>
+                    <input type='submit' className="btn btn-primary m-2"  value='Register' /> 
+               </div>
+
+              </div>  :null}
+             
                    
                 </div>
             </div>

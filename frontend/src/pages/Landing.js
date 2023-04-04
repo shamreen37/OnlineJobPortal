@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 import FooterMain from '../components/FooterMain'
 import  Accordion from '../components/Accordion'
+import Testimonials from '../components/Testimonials'
 const Landing = () => {
   return (
     <>
@@ -151,6 +152,8 @@ const Landing = () => {
       </div>
     </div>
 
+{/* =========== Testimonials =================*/}
+<Testimonials/>
 {/* =========== Create Section =================*/}
         <div className="create-section py-4">
          <div className="container py-4">

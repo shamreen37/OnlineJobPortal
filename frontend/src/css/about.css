@@ -1,0 +1,23 @@
+.about-head-text{
+    font-size: 60px;
+    letter-spacing: 1.7px;
+    font-weight: bold;
+}
+.about-head-container{
+    background-image: linear-gradient(to right bottom, #1298b8, #6eb2c3, #1da1c1, #55afc5, #26aac9, #64b4c6, #25a9c8, #5fb6ca, #20a2c2, #69acbc, #1497b7, #449ab0);
+    color: white;
+    /* background-color: rgb(238, 252, 252); */
+    border-radius: 10px;
+}
+.our-story-text{
+    color: #04beec;
+    font-size: 25px;
+}
+.org-logo-img{
+    width:60px ;
+    
+}
+.about-mv-img{
+width: 75%;
+border-radius: 10px;
+}

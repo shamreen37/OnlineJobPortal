@@ -1,12 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../css/profile.css"
+import NavbarInner from '../components/NavbarInner'
+import profile from '../img/profile-img.png'
 const Profile = () => {
     return (
         <>
-   
-<div className="row">
+        <NavbarInner/>
+   <div className="container-fluid">
+   <div className="row">
 <div className="left-summary col-md-3 ml-4 mt-6">
+
+<div className="card text-center py-3 box-shadow border-0">
+                <h5>Complete your profile <i class="fa-regular fa-pen-to-square"></i> </h5>
+                <hr />
+                <div className="card-body pt-0">
+                  <img src={profile} alt="" className='profile-img-home mb-2' />
+                  <h5 className="card-title">Angela McConnell</h5>
+                  <p className="card-text">Developer | Coder | Learner </p>
+                  <p><i class="fa-solid fa-school"></i> Company/Organisation</p>
+                  <p> <i class="fa-solid fa-location-dot"></i> Bhopal</p>
+                  <a href="#" className="btn btn-primary">View Profile</a>
+                </div>
+              </div>
+
     <div className="profile-img row-md-5">
         <img src=" "></img>
         <p >Noopur Vyas</p>
@@ -24,6 +41,9 @@ const Profile = () => {
        <i className="fa-brands fa-instagram m-3"></i></span>
 
     </div>
+
+   
+
 </div>
 <div className="right-div col-md-8">
     <div className="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure illo, tempore nemo voluptatem beatae sequi velit nesciunt ex sed odit rerum repellendus vero nulla et sit iste vitae amet dignissimos?Saepe corporis voluptatibus, et sunt aperiam, quam nisi nobis mollitia voluptatum eum itaque enim quas suscipit facere 
@@ -57,6 +77,8 @@ const Profile = () => {
    </div>
 
 </div></div>
+   </div>
+
         </>
     )
 }
