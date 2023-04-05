@@ -3,7 +3,10 @@ import '../css/home.css'
 import NavbarInner from '../components/NavbarInner'
 import google from '../img/google.png'
 import profile from '../img/profile-img.png'
+import { useLocation } from 'react-router-dom'
+
 const Home = () => {
+  const location= useLocation();
   return (
     <>
       <NavbarInner />
