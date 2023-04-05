@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import '../css/signup.css'
 import { useState } from 'react'
+import axios from 'axios'
+
 const Signup = () => {
   const [can, setCan] = useState(true);
   const [emp, setEmp] = useState(false);
@@ -24,11 +26,51 @@ const Signup = () => {
   })
 
 const inputCandidate= e =>{
-  console.log(name,value)
   const{name,value}=e.target
   setCandidate({
-    
+    ...candidate,
+    [name]:value
   })
+}
+
+const [company, setCompany] = useState({
+  comName: "",
+  comEmail: "",
+  comDomain:"",
+  comContact: "",
+  comPassword: ""
+})
+
+const inputCompany= e =>{
+const{name,value}=e.target
+setCompany({
+  ...company,
+  [name]:value
+})
+}
+
+const candidateRegister=()=>{
+     const {canName,canEmail,canContact,canPassword }= inputCandidate
+     if(canName && canEmail && canContact && canPassword){
+      axios.post("http://localhost:9002/register",inputCandidate)
+      .then(res=> console.log(res))
+      alert("posted");
+     
+     }else{
+      alert("invalid input");
+     } 
+}
+
+const companyRegister=()=>{
+  const {comName,comEmail, comDomain,comContact,comPassword }= inputCompany
+  if(comName && comEmail && comDomain && comContact && comPassword){
+   axios.post("http://localhost:9002/register",inputCompany)
+   .then(res=> console.log(res))
+   alert("posted");
+  }else{
+   alert("invalid input");
+  }
+  
 }
 
   return (
@@ -49,29 +91,30 @@ const inputCandidate= e =>{
                   {/* ====== candidate form ====== */}
                   <form action="" method='POST' >
                     <div className="signup-input my-3">
-                      <input className='form-control' type="text" name="canName" value={candidate.name} id="" placeholder="Name" />
+                      <input className='form-control' type="text" name="canName" value={candidate.canName}   id="" onChange={inputCandidate} placeholder="Name" />
                     </div>
 
                     <div className="signup-input my-3">
-                      <input className='form-control' type="text" value={candidate.email} name="canEmail" id="" placeholder="Official Email" />
+                      <input className='form-control' type="text" value={candidate.canEmail} name="canEmail" id="" onChange={inputCandidate} placeholder="Official Email" />
                     </div>
 
                     {/* <div className="signup-input my-3">
-                      <input className='form-control' type="text" name="canName" id="" placeholder="Company Name" />
+                      <input className='form-control' type="text" name="canName" id="" onChange={inputCandidate} placeholder="Company Name" />
                     </div> */}
 
                     <div className="signup-input my-3">
-                      <input className='form-control' type="text" value={candidate.contact} name="canContact" id="" placeholder="Contact Number" />
+                      <input className='form-control' type="text" value={candidate.canContact} name="canContact" id="" onChange={inputCandidate} placeholder="Contact Number" />
                     </div>
 
                     <div className="signup-input my-2">
-                      <input className='form-control' type="password" name="canPassword" value={candidate.password} id="" placeholder="Password" />
+                      <input className='form-control' type="password" name="canPassword" value={candidate.canPassword} id="" onChange={inputCandidate} placeholder="Password" />
                     </div>
 
+                    <input type='submit' className="btn btn-primary m-2" value='Register' onClick={candidateRegister} />
                   </form>
                   <div className="signup-bottom-div">
                     <div className="forgot-pwd"> <p>Already Registered?  <Link to="/login"> Login</Link> </p> </div>
-                    <input type='submit' className="btn btn-primary m-2" value='Register' />
+                    
                   </div>
                 </div>
 
@@ -83,32 +126,31 @@ const inputCandidate= e =>{
                     {/*============ company form ============== */}
                     <form action="">
                       <div className="signup-input my-3">
-                        <input className='form-control' type="text" name="name" id="" placeholder="Company Name" />
+                        <input className='form-control' type="text" name="comName" value={company.comName}  onChange={inputCompany} placeholder="Company Name" />
                       </div>
 
                       <div className="signup-input my-3">
-                        <input className='form-control' type="email" onChange={(e) => { setEmail(e.target.value) }} name="" id="" placeholder="Organisation Official Email" />
+                        <input className='form-control' type="email" name="comEmail"  value={company.comEmail}  onChange={inputCompany} placeholder="Organisation Official Email" />
                       </div>
 
                       <div className="signup-input my-3">
-                        <input className='form-control' type="text" name="companyName" id="" placeholder="Domain Name" />
+                        <input className='form-control' type="text" name="comDomain" value={company.comDomain} onChange={inputCompany} placeholder="Domain Name" />
                       </div>
 
                       <div className="signup-input my-3">
-
-                        <input className='form-control' type="text" name="contact" id="" placeholder="Contact Number" />
+                        <input className='form-control' type="text" name="comContact" value={company.comContact} onChange={inputCompany} placeholder="Contact Number" />
                       </div>
 
                       <div className="signup-input my-2">
-                        <input className='form-control' onChange={(e) => { setPassword(e.target.value) }} type="password" name="" id="" placeholder="Password" />
+                        <input className='form-control'  type="password" name="comPassword" value={company.comPassword} onChange={inputCompany} placeholder="Password" />
                       </div>
 
-
+                      <input type='submit' className="btn btn-primary m-2" value='Register' onClick={companyRegister} />
                     </form>
 
                     <div className="signup-bottom-div">
                       <div className="forgot-pwd"> <p>Already Registered?  <Link to="/login"> Login</Link> </p> </div>
-                      <input type='submit' className="btn btn-primary m-2" value='Register' />
+                     
                     </div>
 
                   </div> : null}

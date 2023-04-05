@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navbar from '../components/Navbar'
 import '../css/login.css'
 import axios from 'axios'
+
 const Login = () => {
  const [can,setCan]= useState(true);
  const [emp,setEmp]= useState(false);
@@ -17,19 +18,42 @@ const Switch2=()=>{
   setCan(false);
 }
 
-const  [email, setEmail]= useState('');
-const [password, setPassword]= useState('');
-async function submit(e){
-  e.preventDefault();
-  try{
-    await axios.post("http://localhost:3000/login",{
-      email,password})
-  }
-  catch(e){
-    console.log(e);
-  }
+
+const [candidate, setCandidate] = useState({
+  canEmail: "",
+  canPassword: ""
+})
+
+const inputCandidate= e =>{
+const{name,value}=e.target
+setCandidate({
+  ...candidate,
+  [name]:value
+})
 }
 
+const [company, setCompany] = useState({
+comEmail: "",
+comPassword: ""
+})
+
+const inputCompany= e =>{
+const{name,value}=e.target
+setCompany({
+...company,
+[name]:value
+})
+}
+
+const candidateLogin=()=>{
+  axios.post("http://localhost:9002/login",candidate)
+  .then(res=> console.log(res));
+}
+
+const companyLogin=()=>{
+  axios.post("http://localhost:9002/login",company)
+  .then(res=> console.log(res));
+}
 
   return (
     <> 
@@ -50,16 +74,16 @@ async function submit(e){
                   <form action="" method='POST'>
                    <div className="login-input my-3">
                    <i class="fa-solid fa-user"></i>
-                      <input className='form-control' onChange={(e)=>{setEmail(e.target.value)}} type="email" name="" id="" placeholder="Email or phone number" />
+                      <input className='form-control' type="email" name="canEmail" value={candidate.canEmail} onChange={inputCandidate} placeholder="Email or phone number" />
                     </div>
                     <div className="login-input my-2">
                     <i class="fa-solid fa-key"></i>
-                      <input className='form-control' onChange={(e)=>{setPassword(e.target.value)}} type="password" name="" id="" placeholder="Password" />
+                      <input className='form-control' type="password" name="canPassword" value={candidate.canPassword} onChange={inputCandidate} placeholder="Password" />
                     </div>
 
                      <div className="login-bottom-div">
                       <div className="forgot-pwd"> <p>Forgot your password?</p> </div>
-                      <input type='submit' className="btn btn-primary m-2"  value='Login' /> 
+                      <input type='submit' className="btn btn-primary m-2" onClick={candidateLogin}  value='Login' /> 
                      </div>
                    </form>
                   </div> :null}
@@ -69,16 +93,16 @@ async function submit(e){
                   <form action="">
                    <div className="login-input my-3">
                    <i class="fa-solid fa-user"></i>
-                      <input className='form-control' type="text" name="" id="" placeholder="Organisation Email Address" />
+                      <input className='form-control' type="text" name="comEmail" value={company.comEmail} onChange={inputCompany} placeholder="Organisation Email Address" />
                     </div>
                     <div className="login-input my-2">
                     <i class="fa-solid fa-key"></i>
-                      <input className='form-control' type="password" name="" id="" placeholder="Password" />
+                      <input className='form-control' type="password" name="comPassword" value={company.comPassword} onChange={inputCompany} placeholder="Password" />
                     </div>
 
                      <div className="login-bottom-div">
                       <div className="forgot-pwd"> <p>Forgot your password?</p> </div>
-                      <input type='submit' className="btn btn-primary m-2"  value='Login' /> 
+                      <input type='submit' className="btn btn-primary m-2"  value='Login' onClick={companyLogin}/> 
                      </div>
                    </form>
                   </div>:null}
