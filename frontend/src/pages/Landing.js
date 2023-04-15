@@ -107,7 +107,7 @@ const Landing = () => {
           <i class="fa-solid fa-user"></i>
           </div>
             <div className="working-inner-content-div">
-            <h3>Create account</h3>
+            <h4>Create account</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus eligendi ut aut iste autem. </p>
             </div>
         </div>
@@ -116,7 +116,7 @@ const Landing = () => {
         <i class="fa-solid fa-upload"></i>
           </div>
             <div className="working-inner-content-div">
-              <h3>Upload Resume</h3>
+              <h4>Upload Resume</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus eligendi ut aut iste autem. </p>
             </div>
         </div>
@@ -125,7 +125,7 @@ const Landing = () => {
         <i class="fa-regular fa-file-lines"></i>
           </div>
             <div className="working-inner-content-div">
-              <h3>Apply Job</h3>
+              <h4>Apply Job</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus eligendi ut aut iste autem. </p>
             </div>
         </div>
@@ -134,7 +134,7 @@ const Landing = () => {
         <i class="fa-regular fa-square-check"></i>
           </div>
             <div className="working-inner-content-div">
-              <h3>Get Job</h3>
+              <h4>Get Job</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus eligendi ut aut iste autem. </p>
             </div>
         </div>
@@ -153,7 +153,11 @@ const Landing = () => {
     </div>
 
 {/* =========== Testimonials =================*/}
-<Testimonials/>
+<div className="testimonial-section">
+  <Testimonials/>
+</div>
+
+
 {/* =========== Create Section =================*/}
         <div className="create-section py-4">
          <div className="container py-4">

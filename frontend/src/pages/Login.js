@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navbar from '../components/Navbar'
 import '../css/login.css'
 import axios from 'axios'
+import {useNavigate} from 'react-router-dom'
 
 const Login = () => {
  const [can,setCan]= useState(true);
@@ -54,6 +55,9 @@ const companyLogin=()=>{
   axios.post("http://localhost:9002/login",company)
   .then(res=> console.log(res));
 }
+
+const navigate = useNavigate();
+
 
   return (
     <> 

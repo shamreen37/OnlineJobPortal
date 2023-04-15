@@ -49,16 +49,37 @@ setCompany({
 })
 }
 
-const candidateRegister=()=>{
-     const {canName,canEmail,canContact,canPassword }= inputCandidate
-     if(canName && canEmail && canContact && canPassword){
-      axios.post("http://localhost:9002/register",inputCandidate)
-      .then(res=> console.log(res))
-      alert("posted");
+const candidateRegister=(e)=>{
+  e.preventDefault();
+  fetch("http://localhost:3000/signup",{
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body:JSON.stringify(candidate),
+})
+  // .then((res) => res.JSON())
+  .then((data)=>{
+    console.log("success",candidate);
+  })
+  .catch((error)=>{
+    console.log(error);
+  })
+    // //  const {canName,canEmail,canContact,canPassword }= inputCandidate
+    //  console.log(inputCandidate);
+    //  if(canName && canEmail && canContact && canPassword){
+    //   // axios.post("http://localhost:9002/register",inputCandidate)
+    //   axios({
+    //     method: "POST",
+    //     url: "http://localhost:9002/register",
+    //     data: candidate,
+    //     headers: { "Content-Type": "application/json" },
+    //     body:JSON.stringify(candidate),
+    // })
+    //   .then(res=> console.log(res))
+    //   alert("posted");
      
-     }else{
-      alert("invalid input");
-     } 
+    //  }else{
+    //   alert("invalid input");
+    //  } 
 }
 
 const companyRegister=()=>{
@@ -89,28 +110,29 @@ const companyRegister=()=>{
 
                 {can ? <div className="candidate-signup-div">
                   {/* ====== candidate form ====== */}
-                  <form action="" method='POST' >
+                  <form onSubmit={candidateRegister}>
+                    {/* {console.log('can',candidate)} */}
                     <div className="signup-input my-3">
-                      <input className='form-control' type="text" name="canName" value={candidate.canName}   id="" onChange={inputCandidate} placeholder="Name" />
+                      <input className='form-control' type="text" name="canName" value={candidate.canName}   onChange={inputCandidate} placeholder="Name" />
                     </div>
 
                     <div className="signup-input my-3">
-                      <input className='form-control' type="text" value={candidate.canEmail} name="canEmail" id="" onChange={inputCandidate} placeholder="Official Email" />
+                      <input className='form-control' type="text" value={candidate.canEmail} name="canEmail" onChange={inputCandidate} placeholder="Official Email" />
                     </div>
 
                     {/* <div className="signup-input my-3">
-                      <input className='form-control' type="text" name="canName" id="" onChange={inputCandidate} placeholder="Company Name" />
+                      <input className='form-control' type="text" name="canName" onChange={inputCandidate} placeholder="Company Name" />
                     </div> */}
 
                     <div className="signup-input my-3">
-                      <input className='form-control' type="text" value={candidate.canContact} name="canContact" id="" onChange={inputCandidate} placeholder="Contact Number" />
+                      <input className='form-control' type="text" value={candidate.canContact} name="canContact" onChange={inputCandidate} placeholder="Contact Number" />
                     </div>
 
                     <div className="signup-input my-2">
-                      <input className='form-control' type="password" name="canPassword" value={candidate.canPassword} id="" onChange={inputCandidate} placeholder="Password" />
+                      <input className='form-control' type="password" name="canPassword" value={candidate.canPassword} onChange={inputCandidate} placeholder="Password" />
                     </div>
 
-                    <input type='submit' className="btn btn-primary m-2" value='Register' onClick={candidateRegister} />
+                    <input type='submit' className="btn btn-primary m-2" value='Register'  />
                   </form>
                   <div className="signup-bottom-div">
                     <div className="forgot-pwd"> <p>Already Registered?  <Link to="/login"> Login</Link> </p> </div>

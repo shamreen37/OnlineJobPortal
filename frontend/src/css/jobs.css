@@ -1,0 +1,94 @@
+.sidenav {
+    height: 100%; /* Full-height sidebar */
+    width: 200px;
+    position: fixed; /* Fixed position */
+    top: 0; /* Place it at the top */
+    left: 0;
+    background-color: #f1f1f1; /* Grey background */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* Style the links inside the sidenav */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2196F3;
+    display: block;
+  }
+  
+  /* Change the color on hover */
+  .sidenav a:hover {
+    color: #064579;
+  }
+  
+  /* JobsPage component styles */
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  /* JobThumbnail component styles */
+  .thumbnail {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnail h4 {
+    margin-top: 0;
+  }
+  
+  .thumbnail p {
+    margin-bottom: 10px;
+  }
+  
+  .thumbnail button {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .thumbnail button:hover {
+    background-color: #064579;
+  }
+  
+  /* Filter component styles */
+  .filter {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .filter h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  /* Media queries for responsive design */
+  @media only screen and (max-width: 768px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .col-md-6 {
+      width: 100%;
+    }
+  
+    .filter {
+      margin-top: 20px;
+    }
+  }

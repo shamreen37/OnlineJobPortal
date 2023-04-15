@@ -4,9 +4,9 @@ import NavbarInner from '../components/NavbarInner'
 import google from '../img/google.png'
 import profile from '../img/profile-img.png'
 import { useLocation } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 const Home = () => {
-  const location= useLocation();
+  const location = useLocation();
   return (
     <>
       <NavbarInner />
@@ -24,7 +24,7 @@ const Home = () => {
                   <p className="card-text">Developer | Coder | Learner </p>
                   <p><i class="fa-solid fa-school"></i> Company/Organisation</p>
                   <p> <i class="fa-solid fa-location-dot"></i> Bhopal</p>
-                  <a href="#" className="btn btn-primary">View Profile</a>
+                  <Link to="/sample" className="btn btn-primary">View Profile</Link>
                 </div>
               </div>
 
@@ -33,24 +33,24 @@ const Home = () => {
                   <h5 className="card-title mb-3">Work Experience</h5>
 
                   <div className="latest-jobs-home d-flex w-100 justify-content-between">
-                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-work-exp-logo' />
-                 </div>
-                  <div className="latest-jobs-home-inner-div">
-                    <h6 className='mb-0'>Full Stack Developer Intern</h6>
-                    <p>Company Name <span> &#8226;2021-2022</span> </p>       
+                    <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
+                      <img src={google} alt="" className='home-work-exp-logo' />
+                    </div>
+                    <div className="latest-jobs-home-inner-div">
+                      <h6 className='mb-0'>Full Stack Developer Intern</h6>
+                      <p>Company Name <span> &#8226;2021-2022</span> </p>
+                    </div>
                   </div>
-                </div>
-                  
-                <div className="latest-jobs-home d-flex w-100 justify-content-between">
-                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-work-exp-logo' />
-                 </div>
-                  <div className="latest-jobs-home-inner-div">
-                    <h6 className='mb-0'>Full Stack Developer Intern</h6>
-                    <p>Company Name</p>       
+
+                  <div className="latest-jobs-home d-flex w-100 justify-content-between">
+                    <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
+                      <img src={google} alt="" className='home-work-exp-logo' />
+                    </div>
+                    <div className="latest-jobs-home-inner-div">
+                      <h6 className='mb-0'>Full Stack Developer Intern</h6>
+                      <p>Company Name</p>
+                    </div>
                   </div>
-                </div>
 
                 </div>
               </div>
@@ -58,14 +58,14 @@ const Home = () => {
               <div className="card mt-3 box-shadow border-0">
                 <div className="card-body">
                   <h5 className="card-title">Skills and Expertise</h5>
-                  
-                  <p className='skill-name'>HTML</p> 
+
+                  <p className='skill-name'>HTML</p>
                   <p className='skill-name'>CSS</p>
                   <p className='skill-name'>JavaScript</p>
                   <p className='skill-name'>Cloud Computing</p>
                   <p className='skill-name'>Machine Learning</p>
-                    
-                    
+
+
                 </div>
               </div>
             </div>
@@ -86,27 +86,12 @@ const Home = () => {
                     <h5>Full Stack Developer Intern</h5>
                     <p>Company Name  </p>
                     <p> <span> &#8226;Remote work</span>  <span> &#8226; &#x20B9;5,00,000-7,00,000 </span> <span> &#8226; 0-5 years experience</span>   </p>
-                    
+
                   </div>
-                 <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
-                 <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
-                 </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae dignissimos placeat minus excepturi amet. Deleniti, placeat. At eaque minima omnis voluptate numquam aperiam quae?</p>
-                <hr />
-                
-                <div className="latest-jobs-home d-flex w-100 justify-content-between">
-                  <div className="latest-jobs-home-inner-div">
-                    <h5>Full Stack Developer Intern</h5>
-                    <p>Company Name  </p>
-                    <p> <span> &#8226;Remote work</span>  <span> &#8226; &#x20B9;5,00,000-7,00,000 </span> <span> &#8226; 0-5 years experience</span>   </p>
-                    
+                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
+                    <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
+                    <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
                   </div>
-                 <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
-                 <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
-                 </div>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae dignissimos placeat minus excepturi amet. Deleniti, placeat. At eaque minima omnis voluptate numquam aperiam quae?</p>
                 <hr />
@@ -116,12 +101,27 @@ const Home = () => {
                     <h5>Full Stack Developer Intern</h5>
                     <p>Company Name  </p>
                     <p> <span> &#8226;Remote work</span>  <span> &#8226; &#x20B9;5,00,000-7,00,000 </span> <span> &#8226; 0-5 years experience</span>   </p>
-                    
+
                   </div>
-                 <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
-                 <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
-                 </div>
+                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
+                    <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
+                    <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae dignissimos placeat minus excepturi amet. Deleniti, placeat. At eaque minima omnis voluptate numquam aperiam quae?</p>
+                <hr />
+
+                <div className="latest-jobs-home d-flex w-100 justify-content-between">
+                  <div className="latest-jobs-home-inner-div">
+                    <h5>Full Stack Developer Intern</h5>
+                    <p>Company Name  </p>
+                    <p> <span> &#8226;Remote work</span>  <span> &#8226; &#x20B9;5,00,000-7,00,000 </span> <span> &#8226; 0-5 years experience</span>   </p>
+
+                  </div>
+                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
+                    <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
+                    <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
+                  </div>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae dignissimos placeat minus excepturi amet. Deleniti, placeat. At eaque minima omnis voluptate numquam aperiam quae?</p>
                 <hr />
@@ -134,13 +134,13 @@ const Home = () => {
                     <p>Salary: 5,00,000-7,00,000</p>
                     <p>Location</p>
                   </div>
-                 <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
-                 <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
-                 </div>
+                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
+                    <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
+                    <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
+                  </div>
 
                 </div>
-                  <hr />
+                <hr />
                 <div className="latest-jobs-home d-flex w-100 justify-content-between">
                   <div className="latest-jobs-home-inner-div">
                     <h5>Full Stack Developer Intern</h5>
@@ -149,46 +149,78 @@ const Home = () => {
                     <p>Salary: 5,00,000-7,00,000</p>
                     <p>Location</p>
                   </div>
-                 <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
-                 <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
-                 </div>
+                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
+                    <img src={google} alt="" className='home-latest-job-updates-logo d-block' />
+                    <button className="btn btn-primary apply-now-home-btn"> Apply Now </button>
+                  </div>
 
                 </div>
-              
-               
+
+
 
 
               </div>
-              
+
             </div>
 
             {/* ======Third column============ */}
 
             <div className="col-md-3 homecol-3 p-2">
-            <div className="card box-shadow border-0">
+              <div className="card box-shadow border-0">
                 <div className="card-body">
                   <h5 className="card-title mb-3">Latest News </h5>
 
                   <div className="latest-jobs-home d-flex w-100 justify-content-between">
-                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-work-exp-logo' />
-                 </div>
-                  <div className="latest-jobs-home-inner-div">
-                    <h6 className='mb-0'>Full Stack Developer Intern</h6>
-                    <p>Company Name <span> &#8226;2021-2022</span> </p>       
+                    <div className='latest-job-home-logo-div'>
+                      <img src={google} alt="" className='home-work-exp-logo' />
+                    </div>
+                    <div className="latest-jobs-home-inner-div ms-2">
+                      <p className='mb-0'> Google Remake and Jet Set Radio Reboot Footage Reportedly Leaked Online</p>
+                      <p className='home-news-time'>11 April 2023</p>
+
+                    </div>
                   </div>
-                </div>
-                  
-                <div className="latest-jobs-home d-flex w-100 justify-content-between">
-                  <div className='latest-job-home-logo-div d-flex flex-column justify-content-around'>
-                  <img src={google} alt="" className='home-work-exp-logo' />
-                 </div>
-                  <div className="latest-jobs-home-inner-div">
-                    <h6 className='mb-0'>Full Stack Developer Intern</h6>
-                    <p>Company Name</p>       
+
+                  <div className="latest-jobs-home d-flex w-100 justify-content-between">
+                    <div className='latest-job-home-logo-div'>
+                      <img src={google} alt="" className='home-work-exp-logo' />
+                    </div>
+                    <div className="latest-jobs-home-inner-div ms-2">
+                      <p className='mb-0'> Google Remake and Jet Set Radio Reboot Footage Reportedly Leaked Online</p>
+                      <p className='home-news-time'>11 April 2023</p>
+
+                    </div>
                   </div>
-                </div>
+                  <div className="latest-jobs-home d-flex w-100 justify-content-between">
+                    <div className='latest-job-home-logo-div'>
+                      <img src={google} alt="" className='home-work-exp-logo' />
+                    </div>
+                    <div className="latest-jobs-home-inner-div ms-2">
+                      <p className='mb-0'> Google Remake and Jet Set Radio Reboot Footage Reportedly Leaked Online</p>
+                      <p className='home-news-time'>11 April 2023</p>
+
+                    </div>
+                  </div>
+                  <div className="latest-jobs-home d-flex w-100 justify-content-between">
+                    <div className='latest-job-home-logo-div'>
+                      <img src={google} alt="" className='home-work-exp-logo' />
+                    </div>
+                    <div className="latest-jobs-home-inner-div ms-2">
+                      <p className='mb-0'> Google Remake and Jet Set Radio Reboot Footage Reportedly Leaked Online</p>
+                      <p className='home-news-time'>11 April 2023</p>
+
+                    </div>
+                  </div>
+                  <div className="latest-jobs-home d-flex w-100 justify-content-between">
+                    <div className='latest-job-home-logo-div'>
+                      <img src={google} alt="" className='home-work-exp-logo' />
+                    </div>
+                    <div className="latest-jobs-home-inner-div ms-2">
+                      <p className='mb-0'> Google Remake and Jet Set Radio Reboot Footage Reportedly Leaked Online</p>
+                      <p className='home-news-time'>11 April 2023</p>
+
+                    </div>
+                  </div>
 
                 </div>
               </div>

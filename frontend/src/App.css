@@ -19,6 +19,12 @@ p{
   color: #fff;
   font-weight: 500;
 }
+:root {
+	--primary: #5280a3;
+	--dark: #061b28;
+	--gray: #756388;
+	--light: #ffffff;
+}
 /*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

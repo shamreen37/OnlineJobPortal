@@ -7,6 +7,8 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import About from './pages/About'
+import Jobs from './pages/Jobs';
+import Sample from './pages/Sample';
 import {Routes, Route} from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 import Signup from './pages/Signup';
@@ -21,6 +23,8 @@ function App() {
       <Route path="/home" element={<Home/>}/>
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/about" element={<About/>}/>
+      <Route path="/sample" element={<Sample/>}/>
+      <Route path="/jobs" element={<Jobs/>}/>
      </Routes>
    </BrowserRouter>
   );
