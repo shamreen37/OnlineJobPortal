@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 const Home = () => {
   const location = useLocation();
+  const myData=location.state?.myData;
   return (
     <>
       <NavbarInner />
@@ -16,11 +17,11 @@ const Home = () => {
             {/* ======First column============ */}
             <div className="col-md-3 homecol-1 p-2">
               <div className="card text-center py-3 box-shadow border-0">
-                <h5>Complete your profile <i class="fa-regular fa-pen-to-square"></i> </h5>
+                <h5>Complete your profile<i class="fa-regular fa-pen-to-square"></i> </h5>
                 <hr />
                 <div className="card-body pt-0">
                   <img src={profile} alt="" className='profile-img-home mb-2' />
-                  <h5 className="card-title">Angela McConnell</h5>
+                  <h5 className="card-title">{myData.name}</h5>
                   <p className="card-text">Developer | Coder | Learner </p>
                   <p><i class="fa-solid fa-school"></i> Company/Organisation</p>
                   <p> <i class="fa-solid fa-location-dot"></i> Bhopal</p>
