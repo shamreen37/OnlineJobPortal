@@ -6,6 +6,7 @@ import Dashboard from "../components/CompanyComponents/Dashboard";
 import PostJob from "../components/CompanyComponents/PostJob";
 import CompanyProfile from "../components/CompanyComponents/CompanyProfile";
 import ManageJobs from "../components/CompanyComponents/ManageJobs";
+import Settings from "../components/CompanyComponents/Settings";
 import Home from "./Home";
 const CompanyDashboard = () => {
   const [activeComponent, setActiveComponent] = useState("Dashboard");
@@ -47,8 +48,8 @@ const CompanyDashboard = () => {
          <i class="fa-solid fa-briefcase company-nav-icon"></i> Manage Jobs
         </div>
         <div
-          className={activeComponent === "Resume" ? "active item" : "item"}
-          onClick={() => handleItemClick("Resume")}
+          className={activeComponent === "Settings" ? "active item" : "item"}
+          onClick={() => handleItemClick("Settings")}
         >
         <i class="fa-solid fa-gear company-nav-icon"></i>  Settings
         </div>
@@ -66,7 +67,8 @@ const CompanyDashboard = () => {
         {activeComponent === "Profile" && <CompanyProfile/>}
         {activeComponent === "Post Job" && <PostJob/>}
         {activeComponent === "Manage Jobs" && <ManageJobs/>}
-        {activeComponent === "Logout" && <Home/>}
+        {activeComponent === "Settings" && <Settings/>}
+        {/* {activeComponent === "Logout" && <Home/>} */}
       </div>
 
       {/* Right Column */}

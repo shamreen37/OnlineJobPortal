@@ -34,28 +34,28 @@ const Landing = () => {
         <div className="col-md-3">
           <div className="cat-div">
           <i class="fa-solid fa-palette"></i>
-            <h3 className="cat-head"> Design & Art </h3>
+            <h5 className="cat-head"> Design & Art </h5>
             <p className="cat-details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos! </p>
           </div>
         </div>
         <div className="col-md-3">
           <div className="cat-div">
           <i class="fa-solid fa-chart-line"></i>
-            <h3 className="cat-head"> Sales & Marketing  </h3>
+            <h5 className="cat-head"> Sales & Marketing  </h5>
             <p className="cat-details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos! </p>
           </div>
         </div>
         <div className="col-md-3">
           <div className="cat-div">
           <i class="fa-solid fa-code"></i>
-            <h3 className="cat-head"> Digital & Creative </h3>
+            <h5 className="cat-head"> Digital & Creative </h5>
             <p className="cat-details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos! </p>
           </div>
         </div>
         <div className="col-md-3">
           <div className="cat-div">
           <i class="fa-solid fa-bullseye"></i>
-            <h3 className="cat-head"> Human Resources </h3>
+            <h5 className="cat-head"> Human Resources </h5>
             <p className="cat-details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos! </p>
           </div>
         </div>
@@ -65,28 +65,28 @@ const Landing = () => {
       <div className="col-md-3">
           <div className="cat-div">
           <i class="fa-solid fa-palette"></i>
-            <h3 className="cat-head"> Design & Art </h3>
+            <h5 className="cat-head"> Design & Art </h5>
             <p className="cat-details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos! </p>
           </div>
         </div>
         <div className="col-md-3">
           <div className="cat-div">
           <i class="fa-solid fa-pen-to-square"></i>
-            <h3 className="cat-head"> Content Writing </h3>
+            <h5 className="cat-head"> Content Writing </h5>
             <p className="cat-details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos! </p>
           </div>
         </div>
         <div className="col-md-3">
           <div className="cat-div">
           <i class="fa-solid fa-video"></i>
-            <h3 className="cat-head"> Video Editing </h3>
+            <h5 className="cat-head"> Video Editing </h5>
             <p className="cat-details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos! </p>
           </div>
         </div>
         <div className="col-md-3">
           <div className="cat-div">
           <i class="fa-solid fa-graduation-cap"></i>
-            <h3 className="cat-head"> Education </h3>
+            <h5 className="cat-head"> Education </h5>
             <p className="cat-details"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos! </p>
           </div>
         </div>
@@ -95,7 +95,7 @@ const Landing = () => {
     </div>
 
 {/* =========== Working Section =================*/}
-<div className="working-section py-2">
+<div className="working-section py-2" id='working'>
   <div className="container py-4">
   <div className="row">
     <div className="col-md-6"></div>
@@ -145,9 +145,9 @@ const Landing = () => {
 </div>
 
     {/* =========== FAQ section =================*/}
-    <div className="faq-section py-4">
+    <div className="faq-section py-4" id='faq'>
       <div className="container py-4">
-        <h2 className='text-center'>FAQs</h2>
+        <h3 className='text-center'>Frequently Asked Questions</h3>
         <Accordion/>
       </div>
     </div>
@@ -163,7 +163,7 @@ const Landing = () => {
          <div className="container py-5">
          <div className="row">
           <div className="col-md-8">
-            <h1>Create your free account <br/> and get best job</h1>
+            <h2>Create your free account <br/> and get best job</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est delectus repudiandae voluptas. Debitis natus doloremque numquam vel eos, cum tempore nihil incidunt aliquam! Nam quod similique architecto eius officia.</p>
             <div className="btn btn-primary">Create an account</div>
           </div>

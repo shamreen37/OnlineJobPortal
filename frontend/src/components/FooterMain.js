@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../img/logo.png'
+import { Link } from 'react-router-dom'
 const FooterMain = () => {
   return (
     <>
@@ -19,11 +20,10 @@ const FooterMain = () => {
                 <div className="col-md-2 col-sm-6 col-xs-12 px-2 text-light">
                     <div className="row-col">
                         <p className="topic text-light pb-3 font2">Quick Links</p>
-                        <p><a href="index.html">Home</a></p>
-                        <p><a href="about.php">About Us</a></p>
-                        <p><a href="gallery.php">Gallery</a></p>
-                        <p><a href="news.php">Latest News</a></p>
-                        <p><a href="contact.php">Contact Us</a></p>
+                        <p><Link to="/home"> Home</Link></p>
+                        <p><Link to="/about" > About Us</Link></p>
+                        <p><a href="#working" > How It Works</a></p>
+                        <p><a href="#faq"> FAQ </a></p>
                     </div>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12 px-2 text-light">

@@ -84,9 +84,7 @@
   padding: 20px 0px;
   color: #1fc2e9;
 }
-.cat-head{
-  font-size: 25px;
-}
+
 
   /*======== How it works?=========*/
   .working-section{
@@ -124,9 +122,13 @@
   background-size: cover;
   width: 100%;
 }
+/*=============== FAQ ==================*/
+.accordion-button{
+  font-weight: 600;
+}
 
 /* =============Testimonials============ */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+/* @import url(https://fonts.googleapis.com/css?family=Raleway:400,800); */
 figure.snip1192 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
@@ -159,7 +161,7 @@ figure.snip1192 blockquote {
   display: block;
   border-radius: 8px;
   position: relative;
-  background-color: #fafafa;
+  background-color: #fff;
   padding: 30px 50px 65px 50px;
   font-size: 0.9em;
   font-weight: 500;
@@ -194,6 +196,7 @@ figure.snip1192 .author {
   color:#000;
 }
 figure.snip1192 .author h5 {
+  font-weight: 600px;
   opacity: 0.8;
   margin: 0;
   font-weight: 800;
@@ -204,7 +207,7 @@ figure.snip1192 .author h5 span {
   display: block;
 }
 .testimonial-section{
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
 }
 .testimonial-div{
  /* padding-bottom: 50px; */

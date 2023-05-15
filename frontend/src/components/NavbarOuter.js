@@ -13,17 +13,17 @@ const NavbarOuter = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mx-2 mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link to="/home" className='nav-link'> Home</Link>
+          <Link to="/" className='nav-link'> Home</Link>
         </li>
-        <li className="nav-item mx-2">
+        {/* <li className="nav-item mx-2">
         <Link to="/about" className='nav-link'> About Us</Link>
-        </li>
-        <li className="nav-item mx-2">
+        </li> */}
+        {/* <li className="nav-item mx-2">
         <Link to="/blogs" className='nav-link'> How It Works</Link>
-        </li>
-        <li className="nav-item mx-2">
+        </li> */}
+        {/* <li className="nav-item mx-2">
         <Link to="/blogs" className='nav-link'> Find Jobs</Link>
-        </li>
+        </li> */}
         <li className="nav-item ms-4 me-2">
         <Link to="/login" className='nav-link'> Login</Link>
         </li>
