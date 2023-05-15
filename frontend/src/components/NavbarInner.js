@@ -28,7 +28,7 @@ const NavbarInner = () => {
       
     </div>
    <div> <i class="fa-sharp fa-solid fa-bell nav-icon me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i> </div>
-  <div> <Link to="/sample"><img className='nav-profile' src={profile}/></Link> </div>
+  <div> <Link to="/profile"><img className='nav-profile' src={profile}/></Link> </div>
   <div><i class="fa-solid fa-arrow-right-from-bracket nav-icon ms-3"></i></div>
   </div>
 </nav>

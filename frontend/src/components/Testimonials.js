@@ -9,102 +9,122 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
-import slide_image_1 from './assets/images/img_1.jpg';
-import slide_image_2 from './assets/images/img_2.jpg';
-import slide_image_3 from './assets/images/img_3.jpg';
-import slide_image_4 from './assets/images/img_4.jpg';
-import slide_image_5 from './assets/images/img_5.jpg';
-import slide_image_6 from './assets/images/img_6.jpg';
-import slide_image_7 from './assets/images/img_7.jpg';
 
 
 const Testimonials = () => {
   return (
-    <div>
- <div className="container swiper-container">
-      <h1 className="heading">Sounds from our happy users</h1>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={'3'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 80,
-          modifier: 2.5,
-        }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
-      >
-        <SwiperSlide>
-          {/* <img src={slide_image_1} alt="slide_image" /> */}
-          <div className="testimonial-div">
-            <h3>Review 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae odit repellendus labore vel voluptatem molestiae totam commodi ut. Provident, natus quod. Error laborum soluta explicabo, dolorem rerum alias cupiditate quo.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src={slide_image_2} alt="slide_image" /> */}
-          <div className="testimonial-div">
-            <h3>Review 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae odit repellendus labore vel voluptatem molestiae totam commodi ut. Provident, natus quod. Error laborum soluta explicabo, dolorem rerum alias cupiditate quo.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src={slide_image_3} alt="slide_image" /> */}
-          <div className="testimonial-div">
-            <h3>Review 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae odit repellendus labore vel voluptatem molestiae totam commodi ut. Provident, natus quod. Error laborum soluta explicabo, dolorem rerum alias cupiditate quo.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src={slide_image_4} alt="slide_image" /> */}
-          <div className="testimonial-div">
-            <h3>Review 4</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae odit repellendus labore vel voluptatem molestiae totam commodi ut. Provident, natus quod. Error laborum soluta explicabo, dolorem rerum alias cupiditate quo.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src={slide_image_5} alt="slide_image" /> */}
-          <div className="testimonial-div">
-            <h3>Review 5</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae odit repellendus labore vel voluptatem molestiae totam commodi ut. Provident, natus quod. Error laborum soluta explicabo, dolorem rerum alias cupiditate quo.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src={slide_image_6} alt="slide_image" /> */}
-          <div className="testimonial-div">
-            <h3>Review 6</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae odit repellendus labore vel voluptatem molestiae totam commodi ut. Provident, natus quod. Error laborum soluta explicabo, dolorem rerum alias cupiditate quo.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          {/* <img src={slide_image_7} alt="slide_image" /> */}
-          <div className="testimonial-div">
-            <h3>Review 7</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae odit repellendus labore vel voluptatem molestiae totam commodi ut. Provident, natus quod. Error laborum soluta explicabo, dolorem rerum alias cupiditate quo.</p>
-          </div>
-        </SwiperSlide>
+    <div className='testimonial-section py-5'>
+      <div className="container swiper-container">
+        <h3 className="heading">Sounds from our happy users</h3>
+        <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={'3'}
+          coverflowEffect={{
+            rotate: 3,
+            stretch: 0,
+            depth: 200,
+            modifier: 1.5,
+          }}
+          pagination={{ el: '.swiper-pagination', clickable: true }}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            clickable: true,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="swiper_container"
+        >
+          <SwiperSlide>
+            {/* <img src={slide_image_1} alt="slide_image" /> */}
+            <div className="testimonial-div">
+              {/* try */}
+              <figure class="snip1192">
+                <blockquote>Excellent platform! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vero totam expedita minima perspiciatis eaque reprehenderit fuga reiciendis facere ex.
+                </blockquote>
+                <div class="author">
+                  <img src="https://images.unsplash.com/photo-1655249493799-9cee4fe983bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="sq-sample1" />
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+              {/* try */}
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {/* <img src={slide_image_2} alt="slide_image" /> */}
+            <div className="testimonial-div">
+              <figure class="snip1192 hover">
+                <blockquote>Thank you.Excellent platform! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vero totam expedita minima perspiciatis eaque reprehenderit fuga reiciendis facere ex.</blockquote>
+                <div class="author">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="sq-sample24" />
+                  <h5>Max Conversion<span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {/* <img src={slide_image_3} alt="slide_image" /> */}
+            <div className="testimonial-div">
+              <figure class="snip1192">
+                <blockquote>Excellent platform! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vero totam expedita minima perspiciatis eaque reprehenderit fuga reiciendis facere ex.</blockquote>
+                <div class="author">
+                  <img src="https://images.unsplash.com/photo-1655249481446-25d575f1c054?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="sq-sample29" />
+                  <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+            </div>
+          </SwiperSlide>
+          
+          <SwiperSlide>
+            {/* <img src={slide_image_5} alt="slide_image" /> */}
+            <div className="testimonial-div">
+            <figure class="snip1192">
+  <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
+  <div class="author">
+    <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="sq-sample29"/>
+    <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+  </div>
+</figure>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {/* <img src={slide_image_6} alt="slide_image" /> */}
+            <div className="testimonial-div">
+            <figure class="snip1192">
+  <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
+  <div class="author">
+    <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="sq-sample29"/>
+    <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+  </div>
+</figure>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {/* <img src={slide_image_7} alt="slide_image" /> */}
+            <div className="testimonial-div">
+            <figure class="snip1192">
+  <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
+  <div class="author">
+    <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMHByb2Zlc3Npb25hbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="sq-sample29"/>
+    <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+  </div>
+</figure>
+            </div>
+          </SwiperSlide>
 
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-          <i class="fa-solid fa-circle-arrow-left"></i>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-          <i class="fa-solid fa-circle-arrow-right"></i>
-          </div>
-          <div className="swiper-pagination"></div>
-        </div>
-      </Swiper>
-    </div>
+          {/* <div className="slider-controler">
+            <div className="swiper-button-prev slider-arrow">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+            </div>
+            <div className="swiper-button-next slider-arrow">
+              <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+            <div className="swiper-pagination"></div>
+          </div> */}
+        </Swiper>
+      </div>
 
     </div>
   )

@@ -102,8 +102,8 @@
   border-radius: 10px;
 }
 .working-inner-icon-div{
-  width: 180px !important;
-  height: 100px !important;
+  width: 150px !important;
+  height: 80px !important;
   display: flex;
   align-items: center;
   align-content: center;
@@ -126,18 +126,92 @@
 }
 
 /* =============Testimonials============ */
-
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1192 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+  
+}
+figure.snip1192 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip1192 img {
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+figure.snip1192 blockquote {
+  margin: 0;
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 30px 50px 65px 50px;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0 0 -50px;
+  /* line-height: 1.6em; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px 0px rgba(34, 34, 34, 0.15) !important;
+}
+figure.snip1192 blockquote:before,
+figure.snip1192 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 30px;
+  color: #0090D0;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1192 blockquote:before {
+  top: 10px;
+  left: 20px;
+}
+figure.snip1192 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 35px;
+}
+figure.snip1192 .author {
+  margin: 0; 
+  text-transform: uppercase;
+  text-align: center;
+  color:#000;
+}
+figure.snip1192 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1192 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+}
+.testimonial-section{
+  background-color: #eaeaea;
+}
 .testimonial-div{
-  border: 1px solid gray;
-  padding: 10px;
-  background-color: #1fc2e9;
-  color: #fff;
+ /* padding-bottom: 50px; */
 }
 
 .heading {
-  padding: 1rem 0;
-  font-size: 3.5rem;
+
   text-align: center;
 }
 

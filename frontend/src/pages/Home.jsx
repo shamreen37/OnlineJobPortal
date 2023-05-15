@@ -21,11 +21,11 @@ const Home = () => {
                 <hr />
                 <div className="card-body pt-0">
                   <img src={profile} alt="" className='profile-img-home mb-2' />
-                  <h5 className="card-title">{myData.name}</h5>
-                  <p className="card-text">Developer | Coder | Learner </p>
+                  <h5 className="card-title"></h5>
+                  <p className="card-text text-light">Developer | Coder | Learner </p>
                   <p><i class="fa-solid fa-school"></i> Company/Organisation</p>
                   <p> <i class="fa-solid fa-location-dot"></i> Bhopal</p>
-                  <Link to="/sample" className="btn btn-primary">View Profile</Link>
+                  <Link to="/profile" className="btn btn-primary">View Profile</Link>
                 </div>
               </div>
 

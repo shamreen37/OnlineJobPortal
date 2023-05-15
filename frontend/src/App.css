@@ -25,6 +25,16 @@ p{
 	--gray: #756388;
 	--light: #ffffff;
 }
+input[type=text],input[type=email],textarea, select{
+ 
+       
+}
+::-webkit-input-placeholder {
+  color: rgb(123, 121, 121);
+}
+.table tbody td{
+  padding: 15px 5px;
+}
 /*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

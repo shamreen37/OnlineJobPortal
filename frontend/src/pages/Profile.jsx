@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./sample.css";
+import "../css/profile.css";
 import profile from "../img/profile-img.png"
 
 // Components to be displayed in the middle column
@@ -10,7 +10,7 @@ import Profile4 from "../components/Profile4";
 import Profile5 from "../components/Profile5";
 import NavbarInner from "../components/NavbarInner";
 
-const Sample = () => {
+const Profile = () => {
   const [activeComponent, setActiveComponent] = useState("Basic Details");
 
   const handleItemClick = (name) => {
@@ -23,41 +23,41 @@ const Sample = () => {
      <div className="profile-container">
       {/* Side Navigation Bar */}
       <div className="sidebar">
-<h3>User Profile</h3>
+<h3 className="text-center mb-3">User Profile</h3>
 
-        <img src={profile} alt="" className="side-nav-profile mt-3"/>
-        <h5 className="mt-2">Angela McConnel</h5>
-        <p>Developer | Coder | Learner </p>
+        <img src={profile} alt="" className="side-nav-profile m-auto"/>
+        <h5 className="mt-2 text-center">Angela McConnel</h5>
+        <p className="text-center">Developer | Coder | Learner </p>
                  
         <div
           className={activeComponent === "Basic Details" ? "active item" : "item"}
           onClick={() => handleItemClick("Basic Details")}
         >
-          Basic Details
+         <i class="fa-solid fa-user profile-side-icon"></i> Basic Details
         </div>
         <div
           className={activeComponent === "skills" ? "active item" : "item"}
           onClick={() => handleItemClick("skills")}
         >
-          Skills
+         <i class="fa-solid fa-diagram-project profile-side-icon"></i>  Skills
         </div>
         <div
           className={activeComponent === "posts" ? "active item" : "item"}
           onClick={() => handleItemClick("posts")}
         >
-          Work Experience
+         <i class="fa-solid fa-laptop-file profile-side-icon"></i> Work Experience
         </div>
         <div
           className={activeComponent === "friends" ? "active item" : "item"}
           onClick={() => handleItemClick("friends")}
         >
-          Projects
+        <i class="fa-regular fa-folder-open profile-side-icon"></i>  Projects
         </div>
         <div
           className={activeComponent === "Resume" ? "active item" : "item"}
           onClick={() => handleItemClick("Resume")}
         >
-          Resume
+        <i class="fa-regular fa-file-lines profile-side-icon"></i>  Resume
         </div>
 
       </div>
@@ -80,4 +80,4 @@ const Sample = () => {
   );
 };
 
-export default Sample;
+export default Profile;

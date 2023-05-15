@@ -107,7 +107,7 @@ const Landing = () => {
           <i class="fa-solid fa-user"></i>
           </div>
             <div className="working-inner-content-div">
-            <h4>Create account</h4>
+            <h5>Create account</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus eligendi ut aut iste autem. </p>
             </div>
         </div>
@@ -116,7 +116,7 @@ const Landing = () => {
         <i class="fa-solid fa-upload"></i>
           </div>
             <div className="working-inner-content-div">
-              <h4>Upload Resume</h4>
+              <h5>Upload Resume</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus eligendi ut aut iste autem. </p>
             </div>
         </div>
@@ -125,7 +125,7 @@ const Landing = () => {
         <i class="fa-regular fa-file-lines"></i>
           </div>
             <div className="working-inner-content-div">
-              <h4>Apply Job</h4>
+              <h5>Apply Job</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus eligendi ut aut iste autem. </p>
             </div>
         </div>
@@ -134,7 +134,7 @@ const Landing = () => {
         <i class="fa-regular fa-square-check"></i>
           </div>
             <div className="working-inner-content-div">
-              <h4>Get Job</h4>
+              <h5>Get Job</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus eligendi ut aut iste autem. </p>
             </div>
         </div>
@@ -159,8 +159,8 @@ const Landing = () => {
 
 
 {/* =========== Create Section =================*/}
-        <div className="create-section py-4">
-         <div className="container py-4">
+        <div className="create-section py-5">
+         <div className="container py-5">
          <div className="row">
           <div className="col-md-8">
             <h1>Create your free account <br/> and get best job</h1>
