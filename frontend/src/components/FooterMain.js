@@ -57,7 +57,7 @@ const FooterMain = () => {
             </div>
         </div>
         <div className="copyright text-center p-3">
-            <p> Copyright © 2021 All Rights Reserved by Go-Kart.</p>
+            <p> Copyright © 2021 All Rights Reserved by Job Portal.</p>
         </div>
     </footer>
 
